@@ -1,0 +1,137 @@
+/* 1. STYLE GÉNÉRAL (On garde une base propre) */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 2. LE HEADER (Assure-toi qu'il ressemble à celui de l'accueil) */
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e67e22;
+}
+
+/* 3. SECTION PRÉSENTATION */
+.presentation-famille {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.presentation-famille h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* 4. SECTION VALEURS (Le plus important ici) */
+.nos-valeurs {
+    padding: 50px 10%;
+    background-color: #ecf0f1;
+}
+
+.nos-valeurs h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.nos-valeurs ul {
+    list-style: none; /* On enlève les points noirs */
+    display: flex;    /* On aligne les valeurs côte à côte */
+    justify-content: space-around;
+    flex-wrap: wrap;  /* Pour que ça passe l'un sous l'autre sur mobile */
+    padding: 0;
+}
+
+.nos-valeurs li {
+    background: white;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Petite ombre sympa */
+    width: 250px;
+    text-align: center;
+    border-top: 5px solid #e67e22; /* Une ligne de couleur en haut */
+}
+
+.nos-valeurs li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* 5. LE FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}.nos-valeurs h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Petit trait décoratif sous le titre */
+.nos-valeurs h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #e67e22;
+    margin: 10px auto;
+}
+
+.valeurs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.valeur-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    border-bottom: 5px solid #2c3e50; /* Barre sombre en bas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animation plus fluide */
+}
+
+/* L'effet flottant accentué */
+.valeur-card:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 20px 40px rgba(230, 126, 34, 0.2); /* Ombre orangée au survol */
+    border-bottom: 5px solid #e67e22; /* La barre devient orange au survol */
+}
+
+.valeur-card h3 {
+    color: #e67e22;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.valeur-card p {
+    color: #444;
+    line-height: 1.8; /* Plus d'espace entre les lignes pour faciliter la lecture */
+    text-align: justify;
+}
+
+
